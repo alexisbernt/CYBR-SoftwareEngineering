@@ -1,0 +1,4 @@
+Your client has asked you to design a web scraper to capture online search data. The use case is as follows: 
+A user will open the program and enter a website they would like to search along with a search term. After taking user input, the program will scrape the website html code 
+finding each occurrence of the term. Each time the term is found, the web scraper will save the current URL and the context of the term (the <div> or <p> the term is in). 
+After completion, the user will be shown a list of each term occurrence with clickable links to visit the locations of the term.
