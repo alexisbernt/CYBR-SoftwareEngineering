@@ -1,0 +1,16 @@
+Code and Security Testing Plan:
+The purpose of this document is - to explain how the tests / testing will be implemented.
+Step 1: Download the StealthElf software.
+Step 2: Ensure Java IDE capabilities (for testing purposes).
+Step 3: Ensure clickable icon capabilities (for when the final product is packaged to executable).
+Step 4: Within Java program, make sure all neccessary classes and files are ready.
+Step 5: Run the program.
+Step 6: Run the program and have user input be 1. Then rerun program.
+Step 7: Run the program and have user input be 2. Then rerun program.
+Step 8: Run the program and have user input be 3. Create a new preset. Enter the preset's name. Ensure that preset gets added in files. Then rerun program.
+Step 9: Run the program and have user input be 4. Select a preset to delete. Ensure that preset gets deleted in files. Then rerun program. 
+Step 10: Run the program and have user input be outside of the 1-4 range. Then rerun program.
+Step 11: Run the program, continue with a step between 1-4, then enter INVALID source file path.
+Step 12: Run the program, continue with a step between 1-4, then enter VALID source file path but INVALID destination file path.
+Step 13: Run the program, continue with a step between 1-4, then enter a VALID source file path and a VALID destination file path. Ensure the file (source) selected is moved within files.
+Step 14: Run the program, then write the proper command to exit the program once completed all prompts. Program should properly exit.

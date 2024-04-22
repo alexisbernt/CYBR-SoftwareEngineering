@@ -1,0 +1,32 @@
+Code and Security Testing Overview  
+In this document - What tests need to be carried out and why is explained.
+
+There are seven code-specific tests to be conducted. 
+These tests are:
+From the startup menu:
+- When the user inputs 1
+- When the user inputs 2
+- When the user inputs 3
+- When the user inputs 4
+Once the user is prompted to the backup functionality:
+- When the user prompted to enter a source/destination path
+Once the user is prompted that their backup was successful "success!":
+- User reruns or exits 
+For the program to open in terminal:
+- User clicks on icon
+
+The purpose of each of these tasks is now below:
+From the startup menu: // The purpose of the startup menu is to have an organized destination to begin from.
+- When the user inputs 1 // The purpose of the user inputting 1 is so the user can manually select.
+- When the user inputs 2 // The purpose of the user inputting 2 is so the user can pick a preset.
+- When the user inputs 3 // The purpose of the user inputting 3 is so the user can create a preset.
+- When the user inputs 4 // The purpose of the user inputting 4 is so the user can delete a preset.
+Once the user is prompted to the backup functionality:
+- When the user prompted to enter a source/destination path // The purpose of entering a source path is to know where the file is coming from.
+  // The purpose of entering a destination path is to know where the file is going to.
+Once the user is prompted that their backup was successful "success!":
+- User reruns or exits // The purpose of rerunning is to keep users within our software platform.
+  // The purpose of exiting is to quit the program and stop running.
+For the program to open in terminal:
+- User clicks on icon // The purpose of a clickable icon is for the user to be able to open the software application.
+  // Additionally, an icon creates an association with our specific software. It is likewise helpful for a user's organization when they have our software on their computer.

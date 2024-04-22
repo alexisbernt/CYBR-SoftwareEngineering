@@ -1,0 +1,89 @@
+Code and Security Testing Results:
+Here is where the results of the tests are explained. 
+For charted results, please reference the uploaded CodeTestingResults.xlsx and SecurityTestingResults.xlsx.
+
+Results of Code Testing:
+Test 1:
+The first test was when the user pressed 1. When pressed, the user should be prompted to enter a file path.
+This test passed on both Mac and Windows.
+
+Test 2:
+The second test was when the user pressed 2. When pressed, the user should be shown the available presents and asked for
+selection and destination paths.
+This test passed on both Mac and Windows. On Windows, it is necessary to run this directly from the IDE terminal, rather 
+than from the desktop icon, to work.
+
+Test 3:
+The third test was when the user pressed 3. When pressed, the user should be prompted to enter a preset name, then a source
+file path, and then a preset should be created.
+This test passed on both Mac and Windows. On Windows, it is necessary to run this directly from the IDE terminal, rather 
+than from the desktop icon, to work.
+
+Test 4:
+The fourth test was when the user pressed 4. When pressed, the user should be shown current presets and have the option to
+delete a preset.
+This test passed on both Mac and Windows. On Windows, it is necessary to run this directly from the IDE terminal, rather 
+than from the desktop icon, to work.
+
+Test 5:
+The fifth test occured when the user provides source and destination file paths. When provided, the program should show a message
+indicating a successful file move, as well as actually moving the file.
+This test passed on both Mac and Windows.
+
+Test 6:
+The sixth test occured when the user is prompted to rerun the program or to exit the program. The program should either return to the
+menu or exit successfully, depending on which option was chosen.
+This test passed on both Mac and Windows.
+
+Test 7:
+The seventh test occured when the user clicks the "StealthElf" icon on their computer. The icon should successfully open the program in 
+a terminal screen.
+This test passed on Windows, but failed on Mac.
+
+Results of Security Testing:
+Test 1:
+The first test was the Start Menu Validation. 
+Any option aside from "1, 2, 3, 4" should show error and then reset to have user enter a valid number in the 1-4 range.
+I tested the numbers 64, 9, -1, 1.1, 2.1, 0, and 5. Additionally I tested the characters "a" and the string "opal."
+All of the test units mentioned above did result in an  error. Therefore, the functionality passes the test.
+
+Test 2: 
+The second test was File Path Validation. The purpose of this test was to ensure the program would 
+result in an error if an invalid file path is given.
+I tested the file paths:
+(a) C:alexi/7201/docs
+(b) it_is_fine_I_am_OK
+(c) C:\Users\alexi\IdeaProjects9 (the correct address in this case is C:\Users\alexi\IdeaProjects)
+(d) Main.java
+(e) 23445976
+All of the file paths listed above resulted in:
+  Uh oh! File location not found!
+  Please input a filepath: 
+The program successfully notified the user that the file location was not found.
+Then the program successfully prompts the user to enter a filepath again.
+
+Some exceptions to this rule:
+(f) The file path: C:\ Users \ alexi \ IdeaProjects resulted in the following error message:
+Exception in thread "main" java.nio.file.InvalidPathException: Trailing char < > at index 9: C:\ Users \ alexi \ IdeaProjects
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:194)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:175)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:231)
+	at java.base/java.nio.file.Path.of(Path.java:148)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at Backup.validateBackupPath(Backup.java:45)
+	at Backup.validateBackupPath(Backup.java:53)
+	at Backup.validateBackupPath(Backup.java:53)
+	at Backup.validateBackupPath(Backup.java:53)
+	at Main.manualSelection(Main.java:110)
+	at Main.main(Main.java:16)
+The correct file path is C:\Users\alexi\IdeaProjects but when spaces were entered between the address it results in an error.
+The file path C:\Users\alexi\IdeaProjects (a valid file path with no spaces) does work.
+
+(g) The file path: \Users\alexi\IdeaProjects resulted in the following error message:
+File location successfully located.
+Error.
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+Would you like to continue with another task or exit?
+he file path C:\Users\alexi\IdeaProjects (a valid file path with the 'C:' before the path) does work.
