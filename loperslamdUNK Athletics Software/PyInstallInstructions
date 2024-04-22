@@ -1,0 +1,3 @@
+Use this command to install the libraries we need (double check the file path works for you, you should be CD'd into the loper-slam-dUNK directory to run this command):
+
+pip install -r CODE/requirements.txt

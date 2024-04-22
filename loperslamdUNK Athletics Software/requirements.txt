@@ -1,0 +1,9 @@
+pyodbc
+falcon
+python-mimeparse
+six
+waitress
+SQLAlchemy
+passlib
+pbr
+talons
