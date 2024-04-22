@@ -1,6 +1,9 @@
 # StealthElf
 ### Waterfall Project - Backup Program
 
+## Link to Repo:
+[(https://github.com/jschnell13/StealthElf)](https://github.com/jschnell13/StealthElf) 
+
 ## Index
 #### Part 1
 - **The Basics**:  [Team Details and Problem Statement](https://github.com/jschnell13/StealthElf/blob/main/Documentation/Team%20Details%20and%20Problem%20Statement.md) <br>
