@@ -1,4 +1,7 @@
 # Keyboard Layout and Functionality Explained
+
+Access the official Pure Tone repo here: https://github.com/JGPerks/Pure-Tone
+
 The Big Oil Beats (BOB) Pure Tone Keyboard allows for users to see which keys produce sounds.
 
 Summary: The keyboard is split into two main sections of both letter notes and their sharp versions.  
